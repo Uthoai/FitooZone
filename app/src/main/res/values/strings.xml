@@ -22,4 +22,15 @@
     <string name="full_name">Full Name</string>
     <string name="skip">Skip</string>
     <string name="choose_gender">Choose gender</string>
+    <string name="choose_main_goal">Choose main goal</string>
+    <string name="select_birth_date">Select birth date</string>
+    <string name="select_goal_weight">Select goal weight</string>
+    <string name="choose_training_level">Choose training level</string>
+    <string name="feet">Feet</string>
+    <string name="centimeter">Centimeter</string>
+    <string name="cm">cm</string>
+    <string name="pound">Pound</string>
+    <string name="kilogram">Kilogram</string>
+    <string name="kg">kg</string>
+    <string name="start">Start</string>
 </resources>

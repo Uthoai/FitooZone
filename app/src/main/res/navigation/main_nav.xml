@@ -46,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.fitoozone.SignUpFragment"
+        android:name="com.example.fitoozone.view.signUp.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -58,7 +58,79 @@
     </fragment>
     <fragment
         android:id="@+id/preStep1Fragment"
-        android:name="com.example.fitoozone.PreStep1Fragment"
+        android:name="com.example.fitoozone.view.preSteps.PreStep1Fragment"
         android:label="fragment_pre_step1"
-        tools:layout="@layout/fragment_pre_step1" />
+        tools:layout="@layout/fragment_pre_step1" >
+        <action
+            android:id="@+id/action_preStep1Fragment_to_preStep2Fragment"
+            app:destination="@id/preStep2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preStep2Fragment"
+        android:name="com.example.fitoozone.view.preSteps.PreStep2Fragment"
+        android:label="fragment_pre_step2"
+        tools:layout="@layout/fragment_pre_step2" >
+        <action
+            android:id="@+id/action_preStep2Fragment_to_preStep3Fragment"
+            app:destination="@id/preStep3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preStep3Fragment"
+        android:name="com.example.fitoozone.view.preSteps.PreStep3Fragment"
+        android:label="fragment_pre_step3"
+        tools:layout="@layout/fragment_pre_step3" >
+        <action
+            android:id="@+id/action_preStep3Fragment_to_preStep4Fragment"
+            app:destination="@id/preStep4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preStep4Fragment"
+        android:name="com.example.fitoozone.view.preSteps.PreStep4Fragment"
+        android:label="fragment_pre_step4"
+        tools:layout="@layout/fragment_pre_step4" >
+        <action
+            android:id="@+id/action_preStep4Fragment_to_preStep5Fragment"
+            app:destination="@id/preStep5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preStep5Fragment"
+        android:name="com.example.fitoozone.view.preSteps.PreStep5Fragment"
+        android:label="fragment_pre_step5"
+        tools:layout="@layout/fragment_pre_step5" >
+        <action
+            android:id="@+id/action_preStep5Fragment_to_preStep6Fragment"
+            app:destination="@id/preStep6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preStep6Fragment"
+        android:name="com.example.fitoozone.view.preSteps.PreStep6Fragment"
+        android:label="fragment_pre_step6"
+        tools:layout="@layout/fragment_pre_step6" >
+        <action
+            android:id="@+id/action_preStep6Fragment_to_preStep7Fragment"
+            app:destination="@id/preStep7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preStep7Fragment"
+        android:name="com.example.fitoozone.view.preSteps.PreStep7Fragment"
+        android:label="fragment_pre_step7"
+        tools:layout="@layout/fragment_pre_step7" >
+        <action
+            android:id="@+id/action_preStep7Fragment_to_preStep8Fragment"
+            app:destination="@id/preStep8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preStep8Fragment"
+        android:name="com.example.fitoozone.view.preSteps.PreStep8Fragment"
+        android:label="fragment_pre_step8"
+        tools:layout="@layout/fragment_pre_step8" >
+        <action
+            android:id="@+id/action_preStep8Fragment_to_createPlanFragment"
+            app:destination="@id/createPlanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPlanFragment"
+        android:name="com.example.fitoozone.CreatePlanFragment"
+        android:label="fragment_create_plan"
+        tools:layout="@layout/fragment_create_plan" />
 </navigation>

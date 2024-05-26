@@ -4,7 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PreStep1Fragment">
+    android:background="@color/white"
+    tools:context=".view.preSteps.PreStep1Fragment">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:padding="8dp"
+        android:src="@drawable/ic_back_48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,19 +24,10 @@
         android:text="Step 1 of 8"
         android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/iv_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/iv_back" />
-
-    <ImageView
-        android:id="@+id/iv_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_4sdp"
-        android:padding="8dp"
-        android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,42 +52,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--<RadioGroup
+    <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:scrollbars="vertical"
         app:layout_constraintTop_toBottomOf="@id/tv_chooseGender"
-        android:padding="@dimen/_16sdp">
+        tools:listitem="@layout/item_layout" />
 
-        <RadioButton
-            android:id="@+id/radio_male"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/man"
-            android:text=" Man"
-            android:textSize="@dimen/_16ssp"
-            android:textStyle="bold"/>
-
-        <RadioButton
-            android:id="@+id/radio_female"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/women"
-            android:text=" Woman"
-            android:textSize="@dimen/_16ssp"
-            android:textStyle="bold"/>
-
-        <RadioButton
-            android:id="@+id/radio_neutral"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/women"
-            android:text=" Woman"
-            android:textSize="@dimen/_16ssp"
-            android:textStyle="bold"/>
-
-    </RadioGroup>-->
-
-
-
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
