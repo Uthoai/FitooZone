@@ -5,12 +5,12 @@ import androidx.navigation.fragment.findNavController
 import com.example.fitoozone.R
 import com.example.fitoozone.base.BaseFragment
 import com.example.fitoozone.databinding.FragmentSignInBinding
-import com.example.fitoozone.view.dashboard.DashboardActivity
+import com.example.fitoozone.view.LandingActivity
 
 class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding::inflate) {
     override fun setListener() {
         binding.btnSignIn.setOnClickListener {
-            startActivity(Intent(requireContext(),DashboardActivity::class.java))
+            startActivity(Intent(requireContext(),LandingActivity::class.java))
             requireActivity().finish()
         }
         binding.tvSignup.setOnClickListener {

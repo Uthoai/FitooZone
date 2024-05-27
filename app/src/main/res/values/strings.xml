@@ -33,4 +33,16 @@
     <string name="kilogram">Kilogram</string>
     <string name="kg">kg</string>
     <string name="start">Start</string>
+    <string name="home">Home</string>
+    <string name="training">Training</string>
+    <string name="activity">Activity</string>
+    <string name="profile">Profile</string>
+    <string name="alarm">Alarm</string>
+    <string name="search">Search</string>
+    <string name="category">Category</string>
+    <string name="popular_workouts">Popular Workouts</string>
+    <string name="workouts_80">Workouts: 80</string>
+    <string name="beginner">Beginner</string>
+    <string name="rapid_lower_body">Rapid Lower Body</string>
+    <string name="exercises">Exercises</string>
 </resources>

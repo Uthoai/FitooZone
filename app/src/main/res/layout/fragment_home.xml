@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.home.HomeFragment"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, Deborah"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_24ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_18sdp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_alarm"
+            app:layout_constraintTop_toTopOf="@id/tv_userName"
+            app:layout_constraintBottom_toBottomOf="@id/tv_userName"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:src="@drawable/ic_alarm"
+            android:clickable="true"/>
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/search"
+            android:backgroundTint="#E9F3FF"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_userName"
+            android:layout_marginHorizontal="24dp"/>
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/searchBar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/_18sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_category"
+            app:layout_constraintBottom_toBottomOf="@id/tv_category"
+            android:layout_marginEnd="@dimen/_16sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoryItemList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintStart_toStartOf="@id/tv_category"
+            app:layout_constraintTop_toBottomOf="@id/tv_category"
+            android:layout_marginTop="8dp"
+            tools:listitem="@layout/item_category" />
+
+        <ImageView
+            android:id="@+id/iv_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@id/categoryItemList"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_workouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular_workouts"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/iv_ads"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/_18sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_workouts"
+            app:layout_constraintBottom_toBottomOf="@id/tv_workouts"
+            android:layout_marginEnd="@dimen/_16sdp"/>
+
+        <TextView
+            android:id="@+id/tv_worksTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/workouts_80"
+            app:layout_constraintStart_toStartOf="@id/tv_workouts"
+            app:layout_constraintTop_toBottomOf="@id/tv_workouts"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/workoutItemRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintStart_toStartOf="@id/tv_worksTime"
+            app:layout_constraintTop_toBottomOf="@id/tv_worksTime"
+            android:layout_marginTop="8dp"
+            tools:listitem="@layout/workouts_item_layout" />
+
+        <TextView
+            android:id="@+id/tv_exercises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exercises"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/workoutItemRecycler"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/_18sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_exercises"
+            app:layout_constraintBottom_toBottomOf="@id/tv_exercises"
+            android:layout_marginEnd="@dimen/_16sdp"/>
+
+        <TextView
+            android:id="@+id/tv_exercisesTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/workouts_80"
+            app:layout_constraintStart_toStartOf="@id/tv_exercises"
+            app:layout_constraintTop_toBottomOf="@id/tv_exercises"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exercisesItemRecycler"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="@id/tv_exercisesTime"
+            app:layout_constraintTop_toBottomOf="@id/tv_exercisesTime"
+            android:layout_marginTop="8dp"
+            tools:listitem="@layout/exercises_item_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

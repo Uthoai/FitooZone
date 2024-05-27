@@ -57,4 +57,6 @@ dependencies {
     implementation(libs.ssp.android)
     implementation(libs.sdp.android)
 
+    implementation("io.coil-kt:coil:2.5.0")
+
 }
