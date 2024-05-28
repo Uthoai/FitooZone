@@ -6,11 +6,12 @@ import com.example.fitoozone.R
 import com.example.fitoozone.base.BaseFragment
 import com.example.fitoozone.databinding.FragmentSignInBinding
 import com.example.fitoozone.view.LandingActivity
+import com.example.fitoozone.view.SplashActivity
 
 class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding::inflate) {
     override fun setListener() {
         binding.btnSignIn.setOnClickListener {
-            startActivity(Intent(requireContext(),LandingActivity::class.java))
+            startActivity(Intent(requireContext(),SplashActivity::class.java))
             requireActivity().finish()
         }
         binding.tvSignup.setOnClickListener {

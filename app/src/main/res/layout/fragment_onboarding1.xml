@@ -48,7 +48,7 @@
         app:layout_constraintBottom_toTopOf="@id/btn_next"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/dots2"
+        android:src="@drawable/dot2"
         android:layout_margin="@dimen/_12sdp"
         android:padding="@dimen/_8sdp"/>
 

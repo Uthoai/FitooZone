@@ -1,5 +1,6 @@
 package com.example.fitoozone.view.preSteps
 
+import android.content.Intent
 import android.widget.AdapterView
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
@@ -8,6 +9,8 @@ import com.example.fitoozone.base.BaseFragment
 import com.example.fitoozone.adapter.ListAdapter
 import com.example.fitoozone.data.ListData
 import com.example.fitoozone.databinding.FragmentPreStep8Binding
+import com.example.fitoozone.view.LandingActivity
+import com.example.fitoozone.view.SplashActivity
 
 class PreStep8Fragment : BaseFragment<FragmentPreStep8Binding>(FragmentPreStep8Binding::inflate) {
     private lateinit var listAdapter: ListAdapter
@@ -44,7 +47,8 @@ class PreStep8Fragment : BaseFragment<FragmentPreStep8Binding>(FragmentPreStep8B
             }
 
         binding.btnNext.setOnClickListener {
-            findNavController().navigate(R.id.action_preStep8Fragment_to_createPlanFragment)
+            startActivity(Intent(requireContext(), SplashActivity::class.java))
+            requireActivity().finish()
         }
     }
 

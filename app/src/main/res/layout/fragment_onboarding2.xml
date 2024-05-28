@@ -13,7 +13,9 @@
         android:layout_height="0dp"
         android:background="@drawable/rec_border_shape"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textWelcome"/>
+        app:layout_constraintTop_toTopOf="@id/textWelcome"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textWelcome"
@@ -48,7 +50,7 @@
         app:layout_constraintBottom_toTopOf="@id/btn_next"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/dots3"
+        android:src="@drawable/dot3"
         android:layout_margin="@dimen/_12sdp"
         android:padding="@dimen/_8sdp"/>
 

@@ -9,7 +9,7 @@
     <string name="workout_categories">Workout Categories</string>
     <string name="onboarding1_tvdes">Workout categories will help you gain strength, get in better shape and embrace a healthy lifestyle</string>
     <string name="custom_workouts">Custom Workouts</string>
-    <string name="create_and_save_your_own_custom_workouts_name_your_workouts_save_them_and_they_ll_automatically_appear_when_you_re_ready_to_workout">Create and save your own custom workouts. Name your workouts, save them, and they’ll automatically appear when you’re ready to workout</string>
+    <string name="create_and_save_your_own_custom_workouts_name_your_workouts_save_them_and_they_ll_automatically_appear_when_you_re_ready_to_workout">Create and save your own custom workouts. Name your workouts, save them, and they’ll automatically appear</string>
     <string name="start_training">Start Training</string>
     <string name="sign_in">Sign In</string>
     <string name="email">Email</string>
@@ -45,4 +45,5 @@
     <string name="beginner">Beginner</string>
     <string name="rapid_lower_body">Rapid Lower Body</string>
     <string name="exercises">Exercises</string>
+    <string name="already_have_an_account_sign_in">already have an account? Sign In</string>
 </resources>
