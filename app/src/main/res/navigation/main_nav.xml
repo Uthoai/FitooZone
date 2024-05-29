@@ -123,14 +123,5 @@
         android:id="@+id/preStep8Fragment"
         android:name="com.example.fitoozone.view.preSteps.PreStep8Fragment"
         android:label="fragment_pre_step8"
-        tools:layout="@layout/fragment_pre_step8" >
-        <action
-            android:id="@+id/action_preStep8Fragment_to_createPlanFragment"
-            app:destination="@id/createPlanFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/createPlanFragment"
-        android:name="com.example.fitoozone.CreatePlanFragment"
-        android:label="fragment_create_plan"
-        tools:layout="@layout/fragment_create_plan" />
+        tools:layout="@layout/fragment_pre_step8" />
 </navigation>
